@@ -1,0 +1,21 @@
+[project]
+name = "pinn-clusters"
+version = "0.0.1"
+description = "PINNs for 1D ice-shelf inverse modeling"
+authors = [
+    { name = "Yuno Iwasaki", email = "yiwasaki@berkeley.edu" },
+    { name = "Ching-Yao Lai", email = "cyaolai@stanford.edu" }
+]
+
+dependencies = [
+    "tensorflow-gpu==2.8.1",
+    "tensorflow-probability==0.14.0",
+    "matplotlib==3.4.2",
+    "pydoe==0.3.8",
+    "scipy==1.11.2",
+    "protobuf==3.20"
+]
+
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.2,<4"]
