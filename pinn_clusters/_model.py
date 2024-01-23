@@ -28,18 +28,11 @@ class ShiftLayer(Layer):
     """
     A custom layer that linearly shifts and scales the input data.
 
-    Args:
-        ux (float): Upper bound of the input data range.
-        lx (float): Lower bound of the input data range.
     """
 
-    def __init__(self, ux: float, lx: float, **kwargs):
-        super().__init__(**kwargs)
-        self.ux = ux
-        self.lx = lx
 
     def call(self, inputs):
-        return 2.0 * (inputs - self.lx) / (self.ux - self.lx) - 1.0
+        return 2.0 * (inputs - lx) / (ux - lx) - 1.0
 
 
 def create_mlp(layers: List[int], lyscl: List[float], dtype=tf.float64):
@@ -56,12 +49,16 @@ def create_mlp(layers: List[int], lyscl: List[float], dtype=tf.float64):
     """
 
     inputs = Input(shape=(1,), dtype=dtype)
-    # Assuming `ux` and `lx` are defined elsewhere or passed as arguments
-    shifted = ShiftLayer(ux=ux, lx=lx)(inputs)
-
-    x = shifted
-    for n_unit, lsnow in zip(layers, lyscl):
-        x = Dense(n_unit, activation="tanh", dtype=dtype, kernel_initializer=TunableXavierNormal(lsnow))(x)
-
-    model = Model(inputs=inputs, outputs=x)
+    shifted = ShiftLayer()(inputs)
+    dense = Dense(
+        layers[0], activation="tanh", dtype=dtype,
+        kernel_initializer=TunableXavierNormal(lyscl[0]))(shifted)
+    for n_unit, stddev in zip(layers[1:-1], lyscl[1:-1]):
+        dense = Dense(
+            n_unit, activation="tanh", dtype=dtype,
+            kernel_initializer=TunableXavierNormal(stddev))(dense)
+    dense = Dense(
+        layers[-1], activation=None, dtype=dtype,
+        kernel_initializer=TunableXavierNormal(lyscl[-1]))(dense)
+    model = Model(inputs=inputs, outputs=dense)
     return model
