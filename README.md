@@ -41,7 +41,7 @@ where
 ## ```_formulations.py```
 Implements ```data_equations``` and ```inverse_1st_order_equations```, which serve as the two components of the cost function. Also implemented are the following helper functions:
   * ```analytic_h_constantB(x)```: analytic $h(x)$ solution for constant $B(x)$ profile.
-  * ```analytic_u_constantB(x)``: analytic $u(x)$ solution for constant $B(x)$ profile.
+  * ```analytic_u_constantB(x)```: analytic $u(x)$ solution for constant $B(x)$ profile.
   * ```get_collocation_points(x_train, xmin: float, xmax: float, N_t: int)```: generates a single set of collocation points. 
 
 ## ```_constants.py```
