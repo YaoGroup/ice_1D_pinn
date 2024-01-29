@@ -43,11 +43,14 @@ where
 * ```eqns_o1_inverse.py```: implements the PINN equations for the ice shelf hardness inversion problem (see Equations (17)-(20), p.5 of the main text).
 * ```helpers.py```:          some additional helper functions. 
 
-## optimization.py
-Implements Adam and L-BFGS optimizers.
+## ```_constants.py```
+Defines the values of the physical constants appearing in the physics-enforcing equations.
 
-## model.py
+## ```_model.py```
 Helper functions for neural network initialization.
+
+## ```_optimization.py```
+Implements Adam and L-BFGS optimizers.
 
 # Code Implementation of Collocation Resampling
 
