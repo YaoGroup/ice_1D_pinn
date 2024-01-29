@@ -73,3 +73,23 @@ Thus, the ```SquareLossRandom``` function generates a new set of collocation poi
 
 __Important Note: It is essential to use a _stateful_ random number generator such as ```tf.random.Generator()``` to ensure that the collocation points are resampled after each iteration.__ Using a stateless random generator (such as 
  those provided in the ```numpy.random``` module, or the ```lhs``` generator used in our codes for fixed collocation point generation) will not allow the collocation points to be updated in a TensorFlow training loop, causing the loss function to behave identically to training with fixed collocation points.
+
+ # Citation
+Yunona Iwasaki and Ching-Yao Lai.
+*One-dimensional ice shelf hardness inversion: Clustering behavior and collocation resampling in physics-informed neural networks.* Journal of Computational Physics, Volume 492, 2023, 112435, ISSN 0021-9991, https://doi.org/10.1016/j.jcp.2023.112435.
+
+**BibTex:**
+```
+@article{IWASAKI2023112435,
+          title = {One-dimensional ice shelf hardness inversion: Clustering behavior and collocation resampling in physics-            informed neural networks},
+          journal = {Journal of Computational Physics},
+          volume = {492},
+          pages = {112435},
+          year = {2023},
+          issn = {0021-9991},
+          doi = {https://doi.org/10.1016/j.jcp.2023.112435},
+          url = {https://www.sciencedirect.com/science/article/pii/S0021999123005302},
+          author = {Yunona Iwasaki and Ching-Yao Lai},
+          keywords = {Physics-informed neural networks, Scientific machine learning, Ice dynamics, Geophysical fluid                   dynamics, Nonlinear dynamics, Inverse problems},
+      }
+```
