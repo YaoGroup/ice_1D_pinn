@@ -33,9 +33,9 @@ An instance of the ```SquareLoss``` function is initialized by the following cod
 loss = SquareLoss(equations=physics_equations, equations_data=data_equations, gamma=gamma)
 ```
 where
-* ```equations```: An iterable of callables with the signature ```function(x, neuralnet)``` corresponding to the governing physics equations. To enforce 1D SSA, we pass ```Inverse_1stOrder_Equations``` imported from ```formulations.py``` .
-*  equations_data: An iterable of callables with the signature ```function(x, neuralnet)``` corresponding to the governing physics equations. We use ```Data_Equations``` imported from ```formulations/eqns_o1_inverse.py```.
-*  gamma (_float_): the value of $\gamma$ with which to evaluate the objective function $J(\Theta)$.
+* ```equations```: An iterable of callables with the signature ```function(x, neuralnet)``` corresponding to the governing physics equations. To enforce 1D SSA, we pass ```inverse_1st_order_equations``` imported from ```formulations.py``` .
+*  ```equations_data```: An iterable of callables with the signature ```function(x, neuralnet)``` corresponding to the governing physics equations. We use ```data_aquations``` imported from ```_formulations.py```.
+*  ```gamma``` (_float_): the value of $\gamma$ with which to evaluate the objective function $J(\Theta)$.
 
 ```SquareLossRandom``` is initialized with the same arguments.
 ## formulations
