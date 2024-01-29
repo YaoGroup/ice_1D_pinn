@@ -45,7 +45,7 @@ Implements ```data_equations``` and ```inverse_1st_order_equations```, which ser
   * ```get_collocation_points(x_train, xmin: float, xmax: float, N_t: int)```: generates a single set of collocation points. 
 
 ## ```_constants.py```
-Defines the values of the physical constants appearing in the physics-enforcing equations.
+Defines the values of the physical constants that appear in the physics-enforcing equations.
 
 ## ```_model.py```
 Helper functions for neural network initialization.
