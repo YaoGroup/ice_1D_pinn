@@ -38,10 +38,11 @@ where
 *  ```gamma``` (_float_): the value of $\gamma$ with which to evaluate the objective function $J(\Theta)$.
 
 ```SquareLossRandom``` is initialized with the same arguments.
-## formulations
-* ```constants.py```:       defines the values of the physical constants appearing in the physics-enforcing equations.
-* ```eqns_o1_inverse.py```: implements the PINN equations for the ice shelf hardness inversion problem (see Equations (17)-(20), p.5 of the main text).
-* ```helpers.py```:          some additional helper functions. 
+## ```_formulations.py```
+Implements ```data_equations``` and ```inverse_1st_order_equations```, which serve as the two components of the cost function. Also implemented are the following helper functions:
+  * ```analytic_h_constantB(x)```: analytic $h(x)$ solution for constant $B(x)$ profile.
+  * ```analytic_u_constantB(x)``: analytic $u(x)$ solution for constant $B(x)$ profile.
+  * ```get_collocation_points(x_train, xmin: float, xmax: float, N_t: int)```: generates a single set of collocation points. 
 
 ## ```_constants.py```
 Defines the values of the physical constants appearing in the physics-enforcing equations.
