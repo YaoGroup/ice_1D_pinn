@@ -3,9 +3,9 @@
 Our script should be run in a conda environment using one of the ```.yml``` files in the ```env``` folder. To install conda, please follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
 Then, create a conda environment by running the command:
-
-```conda env create -f environment.yml```
-
+```
+conda env create -f environment.yml
+```
 Replace ```environment.yml``` with the environment file appropriate for your platform:
 
    **environment-cluster.yml**:          For running using Tensorflow 2.4 on an HPC cluster (CPU only)
