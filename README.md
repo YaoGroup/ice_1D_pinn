@@ -6,12 +6,12 @@ Then, create a conda environment with Jupyter installed  by running the command:
 ```
 conda create --name pinn_test python=3.10 jupyter
 ```
-Then, activate the new environment and start 
+Then, activate the new environment.
 
 ```
 conda activate pinn_test
-jupyter-lab
 ```
+If running the 
 Then open the analysis notebook within the jupyter-lab window.
 
 # Code Description
