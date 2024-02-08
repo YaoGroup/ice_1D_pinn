@@ -2,20 +2,17 @@
 
 For usage on your local computer, we recommend using a conda environment To install conda, please follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
-Then, create a conda environment  by running the command:
+Then, create a conda environment with Jupyter installed  by running the command:
 ```
 conda create --name pinn_test python=3.10 jupyter
-conda activate pinn_test
-python -m pip install " pinn_clusters @ git+https://github.com/YaoGroup/ice_1D_pinn.git
+```
+Then, activate the new environment and start 
 
 ```
-Replace ```environment.yml``` with the environment file appropriate for your platform:
-
-   **environment-cluster.yml**:          For running using Tensorflow 2.4 on an HPC cluster (CPU only)
-   
-   **environment-osx.yml**:              For running on Mac OS using Tensorflow 2.4
-   
-   **environment-windows.yml**:          For running on Windows using Tensorflow 2.5 (Tensorflow 2.4 is unsupported on Windows)
+conda activate pinn_test
+jupyter-lab
+```
+Then open the analysis notebook within jupyter-lab window.
 
 # Code Description
 ## ```_loss.py```
