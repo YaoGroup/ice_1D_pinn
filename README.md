@@ -1,10 +1,13 @@
 # Installation
 
-Our script should be run in a conda environment using one of the ```.yml``` files in the ```env``` folder. To install conda, please follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
+For usage on your local computer, we recommend using a conda environment To install conda, please follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
-Then, create a conda environment by running the command:
+Then, create a conda environment  by running the command:
 ```
-conda env create -f environment.yml
+conda create --name pinn_test python=3.10 jupyter
+conda activate pinn_test
+python -m pip install " pinn_clusters @ git+https://github.com/YaoGroup/ice_1D_pinn.git
+
 ```
 Replace ```environment.yml``` with the environment file appropriate for your platform:
 
