@@ -1,6 +1,6 @@
 # Local Installation
 
-For usage on your local computer, we recommend using a conda environment To install conda, please follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
+For usage on your local computer, we recommend the use of a conda environment. To install conda, please follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
 Then, create a conda environment with Jupyter installed  by running the command:
 ```
