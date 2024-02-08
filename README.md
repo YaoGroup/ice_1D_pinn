@@ -12,7 +12,7 @@ Then, activate the new environment and start
 conda activate pinn_test
 jupyter-lab
 ```
-Then open the analysis notebook within jupyter-lab window.
+Then open the analysis notebook within the jupyter-lab window.
 
 # Code Description
 ## ```_loss.py```
