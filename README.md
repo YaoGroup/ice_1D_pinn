@@ -1,4 +1,4 @@
-# Installation
+# Local Installation
 
 For usage on your local computer, we recommend using a conda environment To install conda, please follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
