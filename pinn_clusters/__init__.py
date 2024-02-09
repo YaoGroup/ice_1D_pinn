@@ -4,5 +4,5 @@ from ._model import create_mlp
 #from ._loss import SquareLoss, SquareLossRandom
 #from ._formulations import get_collocation_points, to_tensor
 from ._optimization import LBFGS, Adam
-from ._error_func import gamma_batch
+#from ._error_func import gamma_batch
 from ._data import (add_noise, random_sample)
