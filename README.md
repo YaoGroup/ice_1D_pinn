@@ -1,10 +1,12 @@
 # Quick Installation
 Before you begin, ensure that you have Python installed on your system. pinn_clusters is compatible with Python 3.x. To install pinn_clusters, simply run the following command in your terminal:
-
+```
 python -m pip install " pinn_clusters @ git+https://github.com/YaoGroup/ice_1D_pinn.git"
-
+```
 To install the specific version used in the paper.
+```
 python -m pip install " pinn_clusters @ git+https://github.com/YaoGroup/ice_1D_pinn.git@379852f184dead0ef7f2f7e97bfbc9dc47e3407e" 
+```
 
 # Local Installation
 
