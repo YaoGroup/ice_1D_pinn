@@ -1,5 +1,5 @@
 # Quick Installation
-Before you begin, ensure that you have Python installed on your system. pinn_clusters is compatible with Python 3.x. To install pinn_clusters, simply run the following command in your terminal:
+Before you begin, ensure that you have Python installed on your system. ```pinn_clusters``` is compatible with Python 3.x. To install ```pinn_clusters```, simply run the following command in your terminal:
 ```
 python -m pip install " pinn_clusters @ git+https://github.com/YaoGroup/ice_1D_pinn.git"
 ```
@@ -8,12 +8,12 @@ To install the specific version used in the paper.
 python -m pip install " pinn_clusters @ git+https://github.com/YaoGroup/ice_1D_pinn.git@379852f184dead0ef7f2f7e97bfbc9dc47e3407e" 
 ```
 # Importing Functions
-After installing pinn_clusters, you can import any function from the package directly into your Python script. Just like importing function from other Python libraries like TensorFlow, e.g. ```from tensorflow import keras```, you can importing a function from pinn_clusters using 
+After installing ```pinn_clusters```, you can import any function from the package directly into your Python script. Just like importing function from other Python libraries like TensorFlow, e.g. ```from tensorflow import keras```, you can importing a function from ```pinn_clusters``` using 
 ```
 from pinn_clusters import your_function_here
 ```
 
-Replace your_function_here with the specific function you wish to use from the pinn_clusters package. For instance, to use the gamma_batch function, simply add this line to your code: 
+Replace your_function_here with the specific function you wish to use from the ```pinn_clusters``` package. For instance, to use the gamma_batch function, simply add this line to your code: 
 
 ```
 from pinn_clusters import gamma_batch
