@@ -9,11 +9,15 @@ python -m pip install " pinn_clusters @ git+https://github.com/YaoGroup/ice_1D_p
 ```
 # Importing Functions
 After installing pinn_clusters, you can import any function from the package directly into your Python script. Just like importing function from other Python libraries like TensorFlow, e.g. ```from tensorflow import keras```, you can importing a function from pinn_clusters using 
-```from pinn_clusters import your_function_here```
+```
+from pinn_clusters import your_function_here
+```
 
 Replace your_function_here with the specific function you wish to use from the pinn_clusters package. For instance, to use the gamma_batch function, simply add this line to your code: 
 
-```from pinn_clusters import gamma_batch```
+```
+from pinn_clusters import gamma_batch
+```
 
 # Local Installation
 
