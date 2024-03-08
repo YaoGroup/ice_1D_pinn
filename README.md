@@ -19,7 +19,7 @@ Replace your_function_here with the specific function you wish to use from the `
 from pinn_clusters import gamma_batch
 ```
 
-%# Local Installation
+# Local Installation
 
 For usage on your local computer, we recommend the use of a conda environment. To install conda, please follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
