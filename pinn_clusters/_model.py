@@ -4,6 +4,7 @@ from tensorflow.keras.layers import Input, Dense, Layer
 from tensorflow.keras.models import Model
 from tensorflow.keras.initializers import Initializer
 
+
 class TunableXavierNormal(Initializer):
     """
     Custom Xavier normal initializer with a tunable scaling factor.
