@@ -5,7 +5,6 @@ from typing import Dict
 import numpy as np
 import tensorflow as tf
 import tensorflow_probability as tfp
-from ._formulations import get_collocation_points
 
 
 def _get_indices(trainable_vars):
