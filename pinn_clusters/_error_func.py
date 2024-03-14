@@ -9,7 +9,6 @@ from pinn_clusters import (create_mlp,
                            data_equations
                            )
 from ._data import (random_sample, add_noise)
-from ._constants import *
 from ._formulations import _data_type
 
 def initialize_model(layers,lyscl):

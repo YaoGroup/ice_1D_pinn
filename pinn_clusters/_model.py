@@ -3,7 +3,6 @@ import tensorflow as tf
 from tensorflow.keras.layers import Input, Dense, Layer
 from tensorflow.keras.models import Model
 from tensorflow.keras.initializers import Initializer
-from ._constants import *
 
 class TunableXavierNormal(Initializer):
     """
