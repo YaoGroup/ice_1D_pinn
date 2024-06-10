@@ -1,5 +1,5 @@
 # Quick Installation
-Before you begin, ensure that you have Python installed on your system. ```[pinn_clusters](https://github.com/YaoGroup/pinn_clusters)``` [pinn_clusters](https://github.com/YaoGroup/pinn_clusters) is compatible with Python 3.x. To install ```pinn_clusters```, simply run the following command in your terminal:
+Before you begin, ensure that you have Python installed on your system. ```[pinn_clusters]```(https://github.com/YaoGroup/pinn_clusters) [pinn_clusters](https://github.com/YaoGroup/pinn_clusters) is compatible with Python 3.x. To install ```pinn_clusters```, simply run the following command in your terminal:
 ```
 python -m pip install " pinn_clusters @ git+https://github.com/YaoGroup/ice_1D_pinn.git"
 ```
